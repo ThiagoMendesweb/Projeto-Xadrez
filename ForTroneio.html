@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórmulário do Troneio</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+ </head>
+ <body>
+  <div class="box">
+   <form action="formulario.php" method="POST">
+    <fieldset>
+     <legend>
+      <b>
+       Fórmulário do Troneio
+      </b>
+     </legend>
+     <br>
+     <div class="inputBox">
+      <input type="text" name="nome" id="nome" class="inputUser" pattern="[A-Za-zÀ-ú\s]+" required>
+      <label for="nome" class="labelInput" id="firstNameError">
+       Nome do Troneio
+      </label>
+     </div>
+     <br>
+     <fieldset>
+      <legend>
+       <b>
+        Endereço do Troneio
+       </b>
+      </legend>
+      <br>
+      <div class="inputBox">
+       <input type="text" name="estado" id="estado" class="inputUser" required>
+        <label for="estado" class="labelInput">
+         Estado
+        </label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+       <input type="text" name="cidade" id="ciade" class="inputUser" required>
+       <label for="ciade" class="labelInput" id="emailError">
+        Cidade
+       </label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+       <input type="text" name="barrio" id="barrio" class="inputUser" required>
+       <label for="barrio" class="labelInput" id="phoneError">
+        Barrio
+       </label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+       <input type="text" name="rua" id="rua" class="inputUser" required>
+       <label for="rua" class="labelInput" id="phoneError">
+        Rua
+       </label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+       <input type="tel" name="numero" id="numero" class="inputUser" required>
+       <label for="numero" class="labelInput" id="phoneError">
+        Numero do Conominio
+       </label>
+      </div>
+     </fieldset>
+     <br>
+     <fieldset>
+      <legend>
+       <b>
+        Informação do Troneio
+       </b>
+      </legend>
+      <p>Tipo de conpetição:</p>
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">
+       Masculino
+      </label>
+      <input type="radio" id="feminino" name="genero" value="feminino" required>
+      <label for="feminino">
+       Feminino
+      </label>
+      <input type="radio" id="absoluto" name="genero" value="absoluto" required>
+      <label for="absoluto">
+       Absoluto
+      </label>
+      <input type="radio" id="absolutoSeparado" name="genero" value="absolutoSeparado" required>
+      <label for="absolutoSeparado">
+       Absoluto Separado
+      </label>
+      <p>Tipo de Troneio:</p>
+      <input type="radio" id="suiso" name="tipoTroneio" value="suiso" required>
+      <label for="suiso">
+       Suiso
+      </label>
+      <p>Tem Equipe Tenica?</p>
+      <input type="radio" id="nao" name="equipe" value="nao" required>
+      <label for="nao">
+       Não tem equipe
+      </label>
+      <input type="radio" id="tem" name="equipe" value="tem" required>
+      <label for="tem">
+       Tem equipe
+      </label>
+      <p>Tem Equipe de Organizadores?</p>
+      <input type="radio" id="nao" name="eOrganizadores" value="nao" required>
+      <label for="nao">
+       Não tem equipe
+      </label>
+      <input type="radio" id="tem" name="eOrganizadores" value="tem" required>
+      <label for="tem">
+       Tem equipe
+      </label>
+      <p>Material Nessesario para os paticipantes Trazerem:</p>
+      <textarea placeholder="Digite aqui!" rows="5" cols="35" maxlength="200"></textarea>
+     </fieldset>
+     <br><br>
+     <input type="submit" name="criar" id="submit">
+    </fieldset>
+   </form>
+  </div>
+ </body>
+</html>
